@@ -1,0 +1,148 @@
+Index: src/main/java/comp3111/examsystem/controller/TeacherGradeStatisticController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package comp3111.examsystem.controller;\n\nimport javafx.collections.FXCollections;\nimport javafx.collections.ObservableList;\nimport javafx.fxml.FXML;\nimport javafx.fxml.Initializable;\nimport javafx.scene.chart.*;\nimport javafx.scene.control.ChoiceBox;\nimport javafx.scene.control.TableColumn;\nimport javafx.scene.control.TableView;\nimport javafx.scene.control.cell.PropertyValueFactory;\n\nimport java.net.URL;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.ResourceBundle;\n\npublic class TeacherGradeStatisticController implements Initializable {\n    public static class GradeExampleClass {\n        public String getStudentName() {\n            return \"student\";\n        }\n        public String getCourseNum() {\n            return \"comp3111\";\n        }\n        public String getExamName() {\n            return \"final\";\n        }\n        public String getScore() {\n            return \"100\";\n        }\n        public String getFullScore() {\n            return \"100\";\n        }\n        public String getTimeSpend() {\n            return \"60\";\n        }\n    }\n\n    @FXML\n    private ChoiceBox<String> courseCombox;\n    @FXML\n    private ChoiceBox<String> examCombox;\n    @FXML\n    private ChoiceBox<String> studentCombox;\n    @FXML\n    private TableView<GradeExampleClass> gradeTable;\n    @FXML\n    private TableColumn<GradeExampleClass, String> studentColumn;\n    @FXML\n    private TableColumn<GradeExampleClass, String> courseColumn;\n    @FXML\n    private TableColumn<GradeExampleClass, String> examColumn;\n    @FXML\n    private TableColumn<GradeExampleClass, String> scoreColumn;\n    @FXML\n    private TableColumn<GradeExampleClass, String> fullScoreColumn;\n    @FXML\n    private TableColumn<GradeExampleClass, String> timeSpendColumn;\n    @FXML\n    BarChart<String, Number> barChart;\n    @FXML\n    CategoryAxis categoryAxisBar;\n    @FXML\n    NumberAxis numberAxisBar;\n    @FXML\n    LineChart<String, Number> lineChart;\n    @FXML\n    CategoryAxis categoryAxisLine;\n    @FXML\n    NumberAxis numberAxisLine;\n    @FXML\n    PieChart pieChart;\n\n    private final ObservableList<GradeExampleClass> gradeList = FXCollections.observableArrayList();\n\n    @Override\n    public void initialize(URL url, ResourceBundle resourceBundle) {\n        barChart.setLegendVisible(false);\n        categoryAxisBar.setLabel(\"Course\");\n        numberAxisBar.setLabel(\"Avg. Score\");\n        pieChart.setLegendVisible(false);\n        pieChart.setTitle(\"Student Scores\");\n        lineChart.setLegendVisible(false);\n        categoryAxisLine.setLabel(\"Exam\");\n        numberAxisLine.setLabel(\"Avg. Score\");\n\n        gradeList.add(new GradeExampleClass());\n        gradeTable.setItems(gradeList);\n        studentColumn.setCellValueFactory(new PropertyValueFactory<>(\"studentName\"));\n        courseColumn.setCellValueFactory(new PropertyValueFactory<>(\"courseNum\"));\n        examColumn.setCellValueFactory(new PropertyValueFactory<>(\"examName\"));\n        scoreColumn.setCellValueFactory(new PropertyValueFactory<>(\"score\"));\n        fullScoreColumn.setCellValueFactory(new PropertyValueFactory<>(\"fullScore\"));\n        timeSpendColumn.setCellValueFactory(new PropertyValueFactory<>(\"timeSpend\"));\n\n        refresh();\n        loadChart();\n    }\n\n    @FXML\n    public void refresh() {\n    }\n\n    private void loadChart() {\n        XYChart.Series<String, Number> seriesBar = new XYChart.Series<>();\n        seriesBar.getData().clear();\n        barChart.getData().clear();\n        for (int i = 0;  i < 5; i++) {\n            seriesBar.getData().add(new XYChart.Data<>(\"COMP\" + i, 50));\n        }\n        barChart.getData().add(seriesBar);\n\n        pieChart.getData().clear();\n        for (int i = 0;  i < 4; i++) {\n            pieChart.getData().add(new PieChart.Data(\"student\" + i, 80));\n        }\n\n        XYChart.Series<String, Number> seriesLine = new XYChart.Series<>();\n        seriesLine.getData().clear();\n        lineChart.getData().clear();\n        for (int i = 0;  i < 6; i++) {\n            seriesLine.getData().add(new XYChart.Data<>(\"COMP3111\" + \"-\" + \"quiz\" + i, 70));\n        }\n        lineChart.getData().add(seriesLine);\n\n    }\n\n    @FXML\n    public void reset() {\n    }\n\n    @FXML\n    public void query() {\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/comp3111/examsystem/controller/TeacherGradeStatisticController.java b/src/main/java/comp3111/examsystem/controller/TeacherGradeStatisticController.java
+--- a/src/main/java/comp3111/examsystem/controller/TeacherGradeStatisticController.java	
++++ b/src/main/java/comp3111/examsystem/controller/TeacherGradeStatisticController.java	
+@@ -1,137 +1,1 @@
+-package comp3111.examsystem.controller;
+-
+-import javafx.collections.FXCollections;
+-import javafx.collections.ObservableList;
+-import javafx.fxml.FXML;
+-import javafx.fxml.Initializable;
+-import javafx.scene.chart.*;
+-import javafx.scene.control.ChoiceBox;
+-import javafx.scene.control.TableColumn;
+-import javafx.scene.control.TableView;
+-import javafx.scene.control.cell.PropertyValueFactory;
+-
+-import java.net.URL;
+-import java.util.HashMap;
+-import java.util.List;
+-import java.util.Map;
+-import java.util.ResourceBundle;
+-
+-public class TeacherGradeStatisticController implements Initializable {
+-    public static class GradeExampleClass {
+-        public String getStudentName() {
+-            return "student";
+-        }
+-        public String getCourseNum() {
+-            return "comp3111";
+-        }
+-        public String getExamName() {
+-            return "final";
+-        }
+-        public String getScore() {
+-            return "100";
+-        }
+-        public String getFullScore() {
+-            return "100";
+-        }
+-        public String getTimeSpend() {
+-            return "60";
+-        }
+-    }
+-
+-    @FXML
+-    private ChoiceBox<String> courseCombox;
+-    @FXML
+-    private ChoiceBox<String> examCombox;
+-    @FXML
+-    private ChoiceBox<String> studentCombox;
+-    @FXML
+-    private TableView<GradeExampleClass> gradeTable;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> studentColumn;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> courseColumn;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> examColumn;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> scoreColumn;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> fullScoreColumn;
+-    @FXML
+-    private TableColumn<GradeExampleClass, String> timeSpendColumn;
+-    @FXML
+-    BarChart<String, Number> barChart;
+-    @FXML
+-    CategoryAxis categoryAxisBar;
+-    @FXML
+-    NumberAxis numberAxisBar;
+-    @FXML
+-    LineChart<String, Number> lineChart;
+-    @FXML
+-    CategoryAxis categoryAxisLine;
+-    @FXML
+-    NumberAxis numberAxisLine;
+-    @FXML
+-    PieChart pieChart;
+-
+-    private final ObservableList<GradeExampleClass> gradeList = FXCollections.observableArrayList();
+-
+-    @Override
+-    public void initialize(URL url, ResourceBundle resourceBundle) {
+-        barChart.setLegendVisible(false);
+-        categoryAxisBar.setLabel("Course");
+-        numberAxisBar.setLabel("Avg. Score");
+-        pieChart.setLegendVisible(false);
+-        pieChart.setTitle("Student Scores");
+-        lineChart.setLegendVisible(false);
+-        categoryAxisLine.setLabel("Exam");
+-        numberAxisLine.setLabel("Avg. Score");
+-
+-        gradeList.add(new GradeExampleClass());
+-        gradeTable.setItems(gradeList);
+-        studentColumn.setCellValueFactory(new PropertyValueFactory<>("studentName"));
+-        courseColumn.setCellValueFactory(new PropertyValueFactory<>("courseNum"));
+-        examColumn.setCellValueFactory(new PropertyValueFactory<>("examName"));
+-        scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
+-        fullScoreColumn.setCellValueFactory(new PropertyValueFactory<>("fullScore"));
+-        timeSpendColumn.setCellValueFactory(new PropertyValueFactory<>("timeSpend"));
+-
+-        refresh();
+-        loadChart();
+-    }
+-
+-    @FXML
+-    public void refresh() {
+-    }
+-
+-    private void loadChart() {
+-        XYChart.Series<String, Number> seriesBar = new XYChart.Series<>();
+-        seriesBar.getData().clear();
+-        barChart.getData().clear();
+-        for (int i = 0;  i < 5; i++) {
+-            seriesBar.getData().add(new XYChart.Data<>("COMP" + i, 50));
+-        }
+-        barChart.getData().add(seriesBar);
+ 
+-        pieChart.getData().clear();
+-        for (int i = 0;  i < 4; i++) {
+-            pieChart.getData().add(new PieChart.Data("student" + i, 80));
+-        }
+-
+-        XYChart.Series<String, Number> seriesLine = new XYChart.Series<>();
+-        seriesLine.getData().clear();
+-        lineChart.getData().clear();
+-        for (int i = 0;  i < 6; i++) {
+-            seriesLine.getData().add(new XYChart.Data<>("COMP3111" + "-" + "quiz" + i, 70));
+-        }
+-        lineChart.getData().add(seriesLine);
+-
+-    }
+-
+-    @FXML
+-    public void reset() {
+-    }
+-
+-    @FXML
+-    public void query() {
+-    }
+-}

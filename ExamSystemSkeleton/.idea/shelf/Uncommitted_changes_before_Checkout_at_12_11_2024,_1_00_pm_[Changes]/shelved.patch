@@ -1,0 +1,224 @@
+Index: src/main/resources/database/grade.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>studentId:1730897297061,examId:1730804311727,score:90,fullScore:100,timeSpend:65,id:1731342505193,\r\nstudentId:1730897326628,examId:1730804311727,score:85,fullScore:100,timeSpend:70,id:1731342505194,\r\nstudentId:1730898187668,examId:1730804311727,score:78,fullScore:100,timeSpend:60,id:1731342505195,\r\nstudentId:1730897297061,examId:1730804311728,score:92,fullScore:100,timeSpend:68,id:1731342505196,\r\nstudentId:1730897326628,examId:1730804311728,score:80,fullScore:100,timeSpend:72,id:1731342505197,\r\nstudentId:1730898187668,examId:1730804311728,score:76,fullScore:100,timeSpend:70,id:1731342505198,\r\nstudentId:1730897297061,examId:1730804311729,score:88,fullScore:100,timeSpend:75,id:1731342505199,\r\nstudentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/database/grade.txt b/src/main/resources/database/grade.txt
+--- a/src/main/resources/database/grade.txt	
++++ b/src/main/resources/database/grade.txt	
+@@ -5,4 +5,4 @@
+ studentId:1730897326628,examId:1730804311728,score:80,fullScore:100,timeSpend:72,id:1731342505197,
+ studentId:1730898187668,examId:1730804311728,score:76,fullScore:100,timeSpend:70,id:1731342505198,
+ studentId:1730897297061,examId:1730804311729,score:88,fullScore:100,timeSpend:75,id:1731342505199,
+-studentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,
++studentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,
+\ No newline at end of file
+Index: src/main/java/comp3111/examsystem/entity/Exam.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package comp3111.examsystem.entity;\n\nimport comp3111.examsystem.Database;\nimport comp3111.examsystem.DatabaseService;\n\nimport java.util.List;\n\npublic class Exam extends Entity {\n    /**\n     * id -> the KEY of the exam (1730804311726)\n     * examName -> Name of the exam (Final Exam)\n     * courseKey -> the KEY of the linked course (1730804311725)\n     * examTime -> overall time of the exam (60)\n     * publish -> is the exam published (true/false)\n     */\n    private String examName;\n    private String courseKey;\n    private String examTime;\n    private String publish;\n\n    public Exam() {\n        super();\n    }\n    public Exam(Long id, String examName, String courseKey, String examTime, String publish) {\n        this.examName = examName;\n        this.courseKey = courseKey;\n        this.examTime = examTime;\n        this.publish = publish;\n    }\n    // setters and getters\n    public String getExamName() {\n        return examName;\n    }\n    public void setExamName(String examName) {\n        this.examName = examName;\n    }\n    public String getCourseKey() {\n        return courseKey;\n    }\n    public void setCourseId(String courseKey) {\n        this.courseKey = courseKey;\n    }\n    public String getExamTime() {\n        return examTime;\n    }\n    public void setExamTime(String examTime) {\n        this.examTime = examTime;\n    }\n    public String getPublish() {\n        return publish;\n    }\n    public void setPublish(String publish) {\n        this.publish = publish;\n    }\n\n\n    /**\n     * @return the linked course id (COMP3111)\n     */\n    public String getCourseNum (){\n        Database<Course> courseDatabase = DatabaseService.getCourseDatabase();\n        Course course = courseDatabase.queryByKey(courseKey);\n        return course.getCourseId();\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/comp3111/examsystem/entity/Exam.java b/src/main/java/comp3111/examsystem/entity/Exam.java
+--- a/src/main/java/comp3111/examsystem/entity/Exam.java	
++++ b/src/main/java/comp3111/examsystem/entity/Exam.java	
+@@ -61,6 +61,5 @@
+         Database<Course> courseDatabase = DatabaseService.getCourseDatabase();
+         Course course = courseDatabase.queryByKey(courseKey);
+         return course.getCourseId();
+-
+     }
+ }
+\ No newline at end of file
+Index: src/main/resources/database/student.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>username:TomUsername,name:Tom Brown,age:23,gender:Male,department:English,password:test123,id:1730897326628,\r\nusername:LilyUsername,name:Lily Adams,age:20,gender:Female,department:Physics,password:test123,id:1730898187668,\r\nusername:AlexUsername,name:Alex Johnson,age:22,gender:Male,department:Computer Science,password:test123,id:1730897297061,\r\nusername:test4,name:test4,age:12,gender:Male,department:test,password:test,id:1731336989846,\r\nusername:test3,name:test3,age:12,gender:Male,department:test,password:test,id:1731338157075,\r\nusername:test1,name:test1,age:12,gender:Male,department:test,password:test,id:1731338166063,\r\nusername:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/database/student.txt b/src/main/resources/database/student.txt
+--- a/src/main/resources/database/student.txt	
++++ b/src/main/resources/database/student.txt	
+@@ -4,4 +4,4 @@
+ username:test4,name:test4,age:12,gender:Male,department:test,password:test,id:1731336989846,
+ username:test3,name:test3,age:12,gender:Male,department:test,password:test,id:1731338157075,
+ username:test1,name:test1,age:12,gender:Male,department:test,password:test,id:1731338166063,
+-username:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,
++username:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,
+\ No newline at end of file
+Index: target/classes/database/record.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>questionKey:1731153648609,examKey:1730804311727,id:1731342505183,\nquestionKey:1731203509386,examKey:1730804311727,id:1731342505184,\nquestionKey:1731203521295,examKey:1730804311727,id:1731342505185,\nquestionKey:1731203540444,examKey:1730804311727,id:1731342505186,\nquestionKey:1731153648609,examKey:1730804311728,id:1731342505187,\nquestionKey:1731203509386,examKey:1730804311728,id:1731342505188,\nquestionKey:1731203521295,examKey:1730804311728,id:1731342505189,\nquestionKey:1731203540444,examKey:1730804311728,id:1731342505190,\nquestionKey:1731153648609,examKey:1730804311729,id:1731342505191,\nquestionKey:1731203509386,examKey:1730804311729,id:1731342505192,
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/database/record.txt b/target/classes/database/record.txt
+--- a/target/classes/database/record.txt	
++++ b/target/classes/database/record.txt	
+@@ -7,4 +7,5 @@
+ questionKey:1731203521295,examKey:1730804311728,id:1731342505189,
+ questionKey:1731203540444,examKey:1730804311728,id:1731342505190,
+ questionKey:1731153648609,examKey:1730804311729,id:1731342505191,
+-questionKey:1731203509386,examKey:1730804311729,id:1731342505192,
+\ No newline at end of file
++questionKey:1731203509386,examKey:1730804311729,id:1731342505192,
++questionKey:1731203550001,examKey:1730804311730,id:1731385845011,
+Index: target/classes/database/student.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>username:TomUsername,name:Tom Brown,age:23,gender:Male,department:English,password:test123,id:1730897326628,\r\nusername:LilyUsername,name:Lily Adams,age:20,gender:Female,department:Physics,password:test123,id:1730898187668,\r\nusername:AlexUsername,name:Alex Johnson,age:22,gender:Male,department:Computer Science,password:test123,id:1730897297061,\r\nusername:test4,name:test4,age:12,gender:Male,department:test,password:test,id:1731336989846,\r\nusername:test3,name:test3,age:12,gender:Male,department:test,password:test,id:1731338157075,\r\nusername:test1,name:test1,age:12,gender:Male,department:test,password:test,id:1731338166063,\r\nusername:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/database/student.txt b/target/classes/database/student.txt
+--- a/target/classes/database/student.txt	
++++ b/target/classes/database/student.txt	
+@@ -4,4 +4,4 @@
+ username:test4,name:test4,age:12,gender:Male,department:test,password:test,id:1731336989846,
+ username:test3,name:test3,age:12,gender:Male,department:test,password:test,id:1731338157075,
+ username:test1,name:test1,age:12,gender:Male,department:test,password:test,id:1731338166063,
+-username:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,
++username:test2,name:test2,age:12,gender:Male,department:test,password:test,id:1731338172457,
+\ No newline at end of file
+Index: target/classes/database/exam.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>examName:Midterm Exam,courseKey:CS201,examTime:120,publish:yes,id:1730804311727,\nexamName:Quiz 1,courseKey:ENG302,examTime:150,publish:no,id:1730804311728,\nexamName:Final Exam,courseKey:PHYS102,examTime:120,publish:no,id:1730804311729,\nexamName:Quiz 2,courseKey:CS201,examTime:120,publish:no,id:1730804311730,\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/database/exam.txt b/target/classes/database/exam.txt
+--- a/target/classes/database/exam.txt	
++++ b/target/classes/database/exam.txt	
+@@ -1,4 +1,6 @@
+-examName:Midterm Exam,courseKey:CS201,examTime:120,publish:yes,id:1730804311727,
+-examName:Quiz 1,courseKey:ENG302,examTime:150,publish:no,id:1730804311728,
+-examName:Final Exam,courseKey:PHYS102,examTime:120,publish:no,id:1730804311729,
+-examName:Quiz 2,courseKey:CS201,examTime:120,publish:no,id:1730804311730,
++examName:Midterm Exam,courseKey:1730804322907,examTime:120,publish:yes,id:1730804311727,
++examName:Final Exam,courseKey:1730804322907,examTime:180,publish:yes,id:1730804311728,
++examName:Midterm Exam,courseKey:1730804322906,examTime:120,publish:yes,id:1730804311729,
++examName:Final Exam,courseKey:1730804322906,examTime:180,publish:yes,id:1730804311730,
++examName:Midterm Exam,courseKey:1730804322905,examTime:120,publish:yes,id:1730804311731,
++examName:Final Exam,courseKey:1730804322905,examTime:180,publish:yes,id:1730804311732,
+\ No newline at end of file
+Index: target/classes/database/grade.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>studentId:1730897297061,examId:1730804311727,score:90,fullScore:100,timeSpend:65,id:1731342505193,\r\nstudentId:1730897326628,examId:1730804311727,score:85,fullScore:100,timeSpend:70,id:1731342505194,\r\nstudentId:1730898187668,examId:1730804311727,score:78,fullScore:100,timeSpend:60,id:1731342505195,\r\nstudentId:1730897297061,examId:1730804311728,score:92,fullScore:100,timeSpend:68,id:1731342505196,\r\nstudentId:1730897326628,examId:1730804311728,score:80,fullScore:100,timeSpend:72,id:1731342505197,\r\nstudentId:1730898187668,examId:1730804311728,score:76,fullScore:100,timeSpend:70,id:1731342505198,\r\nstudentId:1730897297061,examId:1730804311729,score:88,fullScore:100,timeSpend:75,id:1731342505199,\r\nstudentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/database/grade.txt b/target/classes/database/grade.txt
+--- a/target/classes/database/grade.txt	
++++ b/target/classes/database/grade.txt	
+@@ -5,4 +5,4 @@
+ studentId:1730897326628,examId:1730804311728,score:80,fullScore:100,timeSpend:72,id:1731342505197,
+ studentId:1730898187668,examId:1730804311728,score:76,fullScore:100,timeSpend:70,id:1731342505198,
+ studentId:1730897297061,examId:1730804311729,score:88,fullScore:100,timeSpend:75,id:1731342505199,
+-studentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,
++studentId:1730897326628,examId:1730804311729,score:90,fullScore:100,timeSpend:65,id:1731342505200,
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"6fd26839-5afa-4d4b-ad46-d8e0e19eb991\" name=\"Changes\" comment=\"feat: updated exammanagement system\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/comp3111/examsystem/controller/ExamManagementController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/comp3111/examsystem/controller/ExamManagementController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/database/question.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/database/question.txt\" afterDir=\"false\" />\n    </list>\n    <list id=\"13c3a557-3786-47c3-a783-e4a284e380c9\" name=\"Changes by hyhen115\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DjangoConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\">\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"JUnit5 Test Class\" />\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\n    <envs>\n      <env key=\"FLASK_APP\" value=\"app\" />\n    </envs>\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\n    <option name=\"myEnvs\">\n      <map>\n        <entry key=\"FLASK_APP\" value=\"app\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"Git.Rebase.Settings\">\n    <option name=\"NEW_BASE\" value=\"main\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$/..\" value=\"Task3\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Seankor20&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/Seankor20/COMP3111_Project.git&quot;,\n    &quot;accountId&quot;: &quot;341bbb79-e9f9-4498-85fe-8be1c8e0f596&quot;\n  }\n}</component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"jar:///Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/comp3111/examsystem/Main.java\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"KubernetesApiPersistence\">{}</component>\n  <component name=\"KubernetesApiProvider\">{\n  &quot;isMigrated&quot;: true\n}</component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2njQmn5ckoE62gzRaQnfuGZFgbt\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.ManagerLoginControllerTest.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;Task2&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_directory_selection&quot;: &quot;/Users/seanseokhyeonhong/Desktop/Project-comp3111/ExamSystemSkeleton/src/main/java/comp3111/examsystem/controller&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/seanhong/Documents/GitHub/COMP3111_Project/ExamSystemSkeleton&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"comp3111.examsystem.entity\" />\n    </key>\n    <key name=\"CreateTestDialog.Recents.Supers\">\n      <recent name=\"\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/java/comp3111/examsystem\" />\n    </key>\n    <key name=\"CreateTestDialog.RecentsKey\">\n      <recent name=\"comp3111.examsystem.controller\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"ManagerLoginControllerTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"ExamSystem\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"comp3111.examsystem.controller.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"comp3111.examsystem.controller\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"comp3111.examsystem.controller.ManagerLoginControllerTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"JUnit.ManagerLoginControllerTest\" />\n        <item itemvalue=\"JUnit.ManagerLoginControllerTest\" />\n        <item itemvalue=\"JUnit.ManagerLoginControllerTest\" />\n        <item itemvalue=\"JUnit.ManagerLoginControllerTest\" />\n        <item itemvalue=\"JUnit.ManagerLoginControllerTest\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"6fd26839-5afa-4d4b-ad46-d8e0e19eb991\" name=\"Changes\" comment=\"\" />\n      <created>1729484166820</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1729484166820</updated>\n      <workItem from=\"1729484167631\" duration=\"5000\" />\n      <workItem from=\"1729484176963\" duration=\"1473000\" />\n      <workItem from=\"1729485660043\" duration=\"33000\" />\n      <workItem from=\"1730169890142\" duration=\"84000\" />\n      <workItem from=\"1730170002344\" duration=\"1150000\" />\n      <workItem from=\"1730210286424\" duration=\"1990000\" />\n      <workItem from=\"1730706581635\" duration=\"613000\" />\n      <workItem from=\"1730722381365\" duration=\"43000\" />\n      <workItem from=\"1730722426280\" duration=\"8556000\" />\n      <workItem from=\"1730735636721\" duration=\"12000\" />\n      <workItem from=\"1730735651170\" duration=\"82000\" />\n      <workItem from=\"1730772339507\" duration=\"205000\" />\n      <workItem from=\"1730773763730\" duration=\"1000\" />\n      <workItem from=\"1730776565000\" duration=\"3265000\" />\n      <workItem from=\"1730790372795\" duration=\"3359000\" />\n      <workItem from=\"1730796110843\" duration=\"39763000\" />\n      <workItem from=\"1731121691978\" duration=\"1481000\" />\n      <workItem from=\"1731126189159\" duration=\"579000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"feat: finished questionmanagement feature\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1731145452477</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1731145452477</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"feat: updated exammanagement system\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1731172340794</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1731172340794</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"added those helper files provided in canvas\" />\n    <MESSAGE value=\"feat: finished questionmanagement feature\" />\n    <MESSAGE value=\"feat: updated exammanagement system\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"feat: updated exammanagement system\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"java-exception\">\n          <properties class=\"java.lang.IndexOutOfBoundsException\" package=\"java.lang\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/ExamSystemSkeleton$ManagerLoginControllerTest.ic\" NAME=\"ManagerLoginControllerTest Coverage Results\" MODIFIED=\"1730211937732\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"true\">\n      <FILTER>comp3111.examsystem.controller.*</FILTER>\n    </SUITE>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -6,8 +6,16 @@
+   <component name="ChangeListManager">
+     <list default="true" id="6fd26839-5afa-4d4b-ad46-d8e0e19eb991" name="Changes" comment="feat: updated exammanagement system">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/comp3111/examsystem/controller/ExamManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comp3111/examsystem/controller/ExamManagementController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/comp3111/examsystem/entity/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comp3111/examsystem/entity/Exam.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/database/exam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/exam.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/database/grade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/grade.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/database/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/question.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/database/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/record.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/database/student.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/student.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/database/exam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/exam.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/database/grade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/grade.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/database/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/record.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/database/student.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/student.txt" afterDir="false" />
+     </list>
+     <list id="13c3a557-3786-47c3-a783-e4a284e380c9" name="Changes by hyhen115" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -80,29 +88,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.ManagerLoginControllerTest.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;Task2&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_directory_selection&quot;: &quot;/Users/seanseokhyeonhong/Desktop/Project-comp3111/ExamSystemSkeleton/src/main/java/comp3111/examsystem/controller&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/Users/seanhong/Documents/GitHub/COMP3111_Project/ExamSystemSkeleton&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Main.executor": "Run",
++    "JUnit.ManagerLoginControllerTest.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
++    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
++    "git-widget-placeholder": "main",
++    "kotlin-language-version-configured": "true",
++    "last_directory_selection": "/Users/seanseokhyeonhong/Desktop/Project-comp3111/ExamSystemSkeleton/src/main/java/comp3111/examsystem/controller",
++    "last_opened_file_path": "/Users/seanhong/Documents/GitHub/COMP3111_Project/ExamSystemSkeleton",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "settings.sync",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CreateClassDialog.RecentsKey">
+       <recent name="comp3111.examsystem.entity" />
+Index: src/main/resources/database/record.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>questionKey:1731153648609,examKey:1730804311727,id:1731342505183,\nquestionKey:1731203509386,examKey:1730804311727,id:1731342505184,\nquestionKey:1731203521295,examKey:1730804311727,id:1731342505185,\nquestionKey:1731203540444,examKey:1730804311727,id:1731342505186,\nquestionKey:1731153648609,examKey:1730804311728,id:1731342505187,\nquestionKey:1731203509386,examKey:1730804311728,id:1731342505188,\nquestionKey:1731203521295,examKey:1730804311728,id:1731342505189,\nquestionKey:1731203540444,examKey:1730804311728,id:1731342505190,\nquestionKey:1731153648609,examKey:1730804311729,id:1731342505191,\nquestionKey:1731203509386,examKey:1730804311729,id:1731342505192,
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/database/record.txt b/src/main/resources/database/record.txt
+--- a/src/main/resources/database/record.txt	
++++ b/src/main/resources/database/record.txt	
+@@ -7,4 +7,5 @@
+ questionKey:1731203521295,examKey:1730804311728,id:1731342505189,
+ questionKey:1731203540444,examKey:1730804311728,id:1731342505190,
+ questionKey:1731153648609,examKey:1730804311729,id:1731342505191,
+-questionKey:1731203509386,examKey:1730804311729,id:1731342505192,
+\ No newline at end of file
++questionKey:1731203509386,examKey:1730804311729,id:1731342505192,
++questionKey:1731203550001,examKey:1730804311730,id:1731385845011,

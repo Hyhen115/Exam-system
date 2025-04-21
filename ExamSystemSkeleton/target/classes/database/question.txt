@@ -1,0 +1,6 @@
+question:What is the rank of a matrix?,optionA:1,optionB:2,optionC:3,optionD:10,answer:A,type:Single,score:10,id:1731153648609,
+question:What is the time complexity of binary search?,optionA:O(n),optionB:O(log n),optionC:O(n log n),optionD:O(1),answer:BC,type:Multiple,score:10,id:1731203509386,
+question:What is Newton's second law?,optionA:F=ma,optionB:E=mc^2,optionC:V=IR,optionD:PV=nRT,answer:A,type:Single,score:10,id:1731203521295,
+question:What is the capital of France?,optionA:Berlin,optionB:Madrid,optionC:Paris,optionD:Rome,answer:C,type:Single,score:20,id:1731203550001,
+question:What is the derivative of x^2?,optionA:2x,optionB:x^2,optionC:2,optionD:x,answer:A,type:Single,score:5,id:1731203560001,
+question:What is 10+10?,optionA:20,optionB:1213,optionC:1234,optionD:1242,answer:A,type:Single,score:01,id:1732284341055,

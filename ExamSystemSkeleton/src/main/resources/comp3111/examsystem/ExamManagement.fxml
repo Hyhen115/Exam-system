@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.ExamManagementController">
+
+    <!-- Top: Filter and Search Options -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+            <Label text="Exam Name:" />
+            <TextField fx:id="examNameFilter" prefWidth="50.0" promptText="Enter exam name"/>
+
+            <Label text="Course ID:" />
+            <ChoiceBox fx:id="courseIdFilter" prefWidth="50.0" />
+
+            <Label text="Publish:" />
+            <ChoiceBox fx:id="publishFilter" prefWidth="40.0" />
+
+            <Button text="Reset" onAction="#onResetExamFilter" />
+            <Button text="Filter" onAction="#onExamFilter" />
+
+            <Label text="Question:" />
+            <TextField fx:id="questionFilter" prefWidth="50.0" promptText="Search question"/>
+
+            <Label text="Type:" />
+            <ChoiceBox fx:id="typeFilter" prefWidth="40.0" />
+
+            <Label text="Score:" />
+            <TextField fx:id="scoreFilter" prefWidth="50.0" promptText="Score" />
+
+            <Button text="Reset" onAction="#onResetQuestionFilter" />
+            <Button text="Filter" onAction="#onQuestionFilter" />
+        </HBox>
+    </top>
+
+    <!-- Center: Main Content with Tables and Control Fields -->
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <HBox spacing="10" alignment="CENTER">
+                <!-- Left Table for Exams -->
+                <TableView fx:id="examTableView" prefWidth="400.0">
+                    <columns>
+                        <TableColumn text="Exam Name" fx:id="examNameColumn" prefWidth="100.0" />
+                        <TableColumn text="Course ID" fx:id="courseIdColumn" prefWidth="100.0" />
+                        <TableColumn text="Exam Time" fx:id="examTimeColumn" prefWidth="100.0" />
+                        <TableColumn text="Publish" fx:id="publishColumn" prefWidth="100.0" />
+                    </columns>
+                </TableView>
+
+                <!-- Right Tables for Questions -->
+                <VBox spacing="10">
+                    <!-- Middle Table for Questions in Selected Exam (smaller height) -->
+                    <HBox spacing="10">
+                    <TableView fx:id="questionsInExamTableView" prefWidth="400.0" prefHeight="200.0">
+                        <columns>
+                            <TableColumn text="Question in Exam" fx:id="questionInExamColumn" prefWidth="200.0" />
+                            <TableColumn text="Type" fx:id="questionTypeInExamColumn" prefWidth="100.0" />
+                            <TableColumn text="Score" fx:id="questionScoreInExamColumn" prefWidth="100.0" />
+                        </columns>
+                    </TableView>
+
+                    <!-- Right Table for All Questions (smaller height) -->
+                    <TableView fx:id="allQuestionsTableView" prefWidth="400.0" prefHeight="200.0">
+                        <columns>
+                            <TableColumn text="Question" fx:id="allQuestionColumn" prefWidth="200.0" />
+                            <TableColumn text="Type" fx:id="allQuestionTypeColumn" prefWidth="100.0" />
+                            <TableColumn text="Score" fx:id="allQuestionScoreColumn" prefWidth="100.0" />
+                        </columns>
+                    </TableView>
+                    </HBox>
+                    <!-- Fields and Buttons Below the Right Tables -->
+                    <HBox spacing="10" alignment="CENTER">
+                        <Button text="Delete from left" onAction="#onDeleteLeft" />
+                        <Button text="Add to left" onAction="#onAddLeft" />
+                    </HBox>
+                    <HBox spacing="10">
+                        <Label text="Exam Name:" />
+                        <TextField fx:id="examNameField" promptText="Enter exam name" />
+
+                        <Label text="Exam Time:" />
+                        <TextField fx:id="examTimeField" promptText="Enter time (mins)" />
+
+                        <Label text="Course ID:" />
+                        <ChoiceBox fx:id="courseIdComboBox" prefWidth="100.0" />
+
+                        <Label text="Publish" />
+                        <ChoiceBox fx:id="publishComboBox" prefWidth="80.0" />
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <!-- Bottom Buttons Below All Tables -->
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Delete" onAction="#onDelete" />
+                <Button text="Refresh" onAction="#refresh" />
+                <Button text="Add" onAction="#onAdd" />
+                <Button text="Update" onAction="#onUpdate" />
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

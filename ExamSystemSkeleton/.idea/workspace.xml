@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fd26839-5afa-4d4b-ad46-d8e0e19eb991" name="Changes" comment="feat: data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/course.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/course.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/courseregrecord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/courseregrecord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/exam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/exam.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/grade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/grade.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/record.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/record.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/course.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/course.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/courseregrecord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/courseregrecord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/grade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/grade.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/question.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/teacher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/teacher.txt" afterDir="false" />
+    </list>
+    <list id="13c3a557-3786-47c3-a783-e4a284e380c9" name="Changes by hyhen115" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Task3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Seankor20&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Seankor20/COMP3111_Project.git&quot;,
+    &quot;accountId&quot;: &quot;b9a4ac08-1644-4e5b-b699-1946e68ffa46&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/comp3111/examsystem/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///private/var/folders/rn/8qhxthh12lz7mjnwtsv2qd4m0000gn/T/tmp_246_ManagerTeacherManagementController.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///private/var/folders/rn/8qhxthh12lz7mjnwtsv2qd4m0000gn/T/tmp_2839_ManagerTeacherManagementController.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///private/var/folders/rn/8qhxthh12lz7mjnwtsv2qd4m0000gn/T/tmp_3092_ManagerTeacherManagementController.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2njQmn5ckoE62gzRaQnfuGZFgbt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AddTeacherTest.executor": "Run",
+    "JUnit.CourseManagementServiceTest and 1 more.executor": "Coverage",
+    "JUnit.CourseManagementServiceTest.executor": "Run",
+    "JUnit.CourseManagementServiceTest.testAddCourseFail.executor": "Run",
+    "JUnit.CourseManagementServiceTest.testAddCourseSuccess.executor": "Run",
+    "JUnit.CourseManagementServiceTest.testDeleteCourseSuccess.executor": "Run",
+    "JUnit.CourseManagementServiceTest.testModifyCourseFail.executor": "Run",
+    "JUnit.CourseManagementServiceTest.testModifyCourseSuccess.executor": "Run",
+    "JUnit.CourseRegRecordTest and 5 more.executor": "Coverage",
+    "JUnit.CourseRegRecordTest.executor": "Run",
+    "JUnit.CourseRegistrationRecordManagementServiceTest.TestAddCourseRegistrationRecordFail.executor": "Run",
+    "JUnit.CourseRegistrationRecordManagementServiceTest.TestAddCourseRegistrationRecordSuccess.executor": "Run",
+    "JUnit.CourseRegistrationRecordManagementServiceTest.executor": "Run",
+    "JUnit.CourseTest.executor": "Coverage",
+    "JUnit.ExamServiceTest.executor": "Run",
+    "JUnit.GradeTest.executor": "Coverage",
+    "JUnit.GradeTest.getCourseKey.executor": "Run",
+    "JUnit.GradeTest.testGetCourseNum.executor": "Run",
+    "JUnit.GradeTest.testGetExamName.executor": "Run",
+    "JUnit.GradeTest.testGetStudentName.executor": "Coverage",
+    "JUnit.ManagerLoginControllerTest.executor": "Coverage",
+    "JUnit.ManagerLoginControllerTest.testLoginSuccess.executor": "Run",
+    "JUnit.ManagerTeacherManagementControllerTest (1).executor": "Run",
+    "JUnit.ManagerTeacherManagementControllerTest.executor": "Run",
+    "JUnit.ManagerTeacherManagementControllerTest.testAddTeacher.executor": "Run",
+    "JUnit.ManagerTest.executor": "Coverage",
+    "JUnit.ManagerTest.testAuthenticate_Fail_Password.executor": "Coverage",
+    "JUnit.ManagerTest.testAuthenticate_Fail_Username.executor": "Coverage",
+    "JUnit.ManagerTest.testAuthenticate_Success.executor": "Coverage",
+    "JUnit.QuestionServiceTest.executor": "Run",
+    "JUnit.RecordTest.executor": "Coverage",
+    "JUnit.StudentExamServiceTest.executor": "Run",
+    "JUnit.StudentManagementServiceTest and 1 more.executor": "Coverage",
+    "JUnit.StudentManagementServiceTest.TestAddStudentFail.executor": "Run",
+    "JUnit.StudentManagementServiceTest.TestAddStudentSuccess.executor": "Run",
+    "JUnit.StudentManagementServiceTest.TestUpdateStudentFail.executor": "Run",
+    "JUnit.StudentManagementServiceTest.executor": "Run",
+    "JUnit.StudentRegisterServiceTest.executor": "Run",
+    "JUnit.StudentTest and 1 more.executor": "Run",
+    "JUnit.TeacherManagementServiceTest.executor": "Run",
+    "JUnit.TeacherManagementServiceTest.testAddTeacherFalse.executor": "Run",
+    "JUnit.TeacherManagementServiceTest.testAddTeacherTrue.executor": "Run",
+    "JUnit.TeacherManagementServiceTest.testDeleteTeacherFalse.executor": "Coverage",
+    "JUnit.TeacherManagementServiceTest.testDeleteTeacherTrue.executor": "Run",
+    "JUnit.TeacherRegisterServiceTest.executor": "Run",
+    "JUnit.comp3111.examsystem.entity in ExamSystem.executor": "Coverage",
+    "JUnit.entity in ExamSystem.executor": "Run",
+    "JUnit.examsystem in ExamSystem.executor": "Run",
+    "JUnit.service in ExamSystem.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/seanseokhyeonhong/Desktop/Project-comp3111/ExamSystemSkeleton/src/main/java/comp3111/examsystem/controller",
+    "last_opened_file_path": "/Users/seanhong/Documents/GitHub/COMP3111_Project/ExamSystemSkeleton",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="comp3111.examsystem.entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/comp3111/examsystem" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="comp3111.examsystem.service" />
+      <recent name="comp3111.examsystem.controller" />
+      <recent name="comp3111.examsystem.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StudentRegisterServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comp3111.examsystem.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comp3111.examsystem.service" />
+      <option name="MAIN_CLASS_NAME" value="comp3111.examsystem.service.StudentRegisterServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherManagementServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comp3111.examsystem.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comp3111.examsystem.service" />
+      <option name="MAIN_CLASS_NAME" value="comp3111.examsystem.service.TeacherManagementServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherRegisterServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comp3111.examsystem.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="comp3111.examsystem.service" />
+      <option name="MAIN_CLASS_NAME" value="comp3111.examsystem.service.TeacherRegisterServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="examsystem in ExamSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/comp3111/examsystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="service in ExamSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamSystem" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/comp3111/examsystem/service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.StudentRegisterServiceTest" />
+      <item itemvalue="JUnit.TeacherManagementServiceTest" />
+      <item itemvalue="JUnit.TeacherRegisterServiceTest" />
+      <item itemvalue="JUnit.examsystem in ExamSystem" />
+      <item itemvalue="JUnit.service in ExamSystem" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.examsystem in ExamSystem" />
+        <item itemvalue="JUnit.service in ExamSystem" />
+        <item itemvalue="JUnit.TeacherRegisterServiceTest" />
+        <item itemvalue="JUnit.TeacherManagementServiceTest" />
+        <item itemvalue="JUnit.StudentRegisterServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fd26839-5afa-4d4b-ad46-d8e0e19eb991" name="Changes" comment="" />
+      <created>1729484166820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729484166820</updated>
+      <workItem from="1729484167631" duration="5000" />
+      <workItem from="1729484176963" duration="1473000" />
+      <workItem from="1729485660043" duration="33000" />
+      <workItem from="1730169890142" duration="84000" />
+      <workItem from="1730170002344" duration="1150000" />
+      <workItem from="1730210286424" duration="1990000" />
+      <workItem from="1730706581635" duration="613000" />
+      <workItem from="1730722381365" duration="43000" />
+      <workItem from="1730722426280" duration="8556000" />
+      <workItem from="1730735636721" duration="12000" />
+      <workItem from="1730735651170" duration="82000" />
+      <workItem from="1730772339507" duration="205000" />
+      <workItem from="1730773763730" duration="1000" />
+      <workItem from="1730776565000" duration="3265000" />
+      <workItem from="1730790372795" duration="3359000" />
+      <workItem from="1730796110843" duration="39763000" />
+      <workItem from="1731121691978" duration="1481000" />
+      <workItem from="1731126189159" duration="579000" />
+      <workItem from="1731234396935" duration="3710000" />
+      <workItem from="1731238749536" duration="23559000" />
+      <workItem from="1731591083406" duration="6070000" />
+      <workItem from="1731744179274" duration="16839000" />
+      <workItem from="1731815251477" duration="88000" />
+      <workItem from="1731816469077" duration="159000" />
+      <workItem from="1732191639185" duration="550000" />
+      <workItem from="1732414004516" duration="192000" />
+      <workItem from="1732415332141" duration="112000" />
+      <workItem from="1732449701941" duration="5001000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: finished questionmanagement feature">
+      <option name="closed" value="true" />
+      <created>1731145452477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731145452477</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: updated exammanagement system">
+      <option name="closed" value="true" />
+      <created>1731172340794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731172340794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Student-services" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added those helper files provided in canvas" />
+    <MESSAGE value="feat: finished questionmanagement feature" />
+    <MESSAGE value="feat: updated exammanagement system" />
+    <MESSAGE value="feat: data" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: data" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ExamTest.ic" NAME="ExamTest Coverage Results" MODIFIED="1732108634366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentManagementServiceTest.ic" NAME="StudentManagementServiceTest Coverage Results" MODIFIED="1732271149618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseTest.ic" NAME="CourseTest Coverage Results" MODIFIED="1732424093757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentTest.ic" NAME="StudentTest Coverage Results" MODIFIED="1732108670572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$TeacherManagementServiceTest.ic" NAME="TeacherManagementServiceTest Coverage Results" MODIFIED="1732267704081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseRegistrationRecordManagementServiceTest_TestAddCourseRegistrationRecordSuccess.ic" NAME="CourseRegistrationRecordManagementServiceTest.TestAddCourseRegistrationRecordSuccess Coverage Results" MODIFIED="1732518321772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseRegistrationRecordManagementServiceTest_TestAddCourseRegistrationRecordFail.ic" NAME="CourseRegistrationRecordManagementServiceTest.TestAddCourseRegistrationRecordFail Coverage Results" MODIFIED="1732518331686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentRegisterServiceTest_testAddStudent.ic" NAME="StudentRegisterServiceTest.testAddStudent Coverage Results" MODIFIED="1732396079287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerLoginControllerTest.ic" NAME="ManagerLoginControllerTest Coverage Results" MODIFIED="1732111044223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerTest_testAuthenticate_Success.ic" NAME="ManagerTest.testAuthenticate_Success Coverage Results" MODIFIED="1731234565062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$QuestionTest.ic" NAME="QuestionTest Coverage Results" MODIFIED="1732110737867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerTest_testAuthenticate_Fail_Password.ic" NAME="ManagerTest.testAuthenticate_Fail_Password Coverage Results" MODIFIED="1731234603327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$RecordTest.ic" NAME="RecordTest Coverage Results" MODIFIED="1732087423400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentExamServiceTest_testAddGrade.ic" NAME="StudentExamServiceTest.testAddGrade Coverage Results" MODIFIED="1732395882262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseRegRecordTest_and_5_more.ic" NAME="CourseRegRecordTest and 5 more Coverage Results" MODIFIED="1732414132446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$EntityTest.ic" NAME="EntityTest Coverage Results" MODIFIED="1732108628620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$comp3111_examsystem_entity_in_ExamSystem.ic" NAME="comp3111.examsystem.entity in ExamSystem Coverage Results" MODIFIED="1731753765660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$service_in_ExamSystem.ic" NAME="service in ExamSystem Coverage Results" MODIFIED="1732414049779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentExamServiceTest.ic" NAME="StudentExamServiceTest Coverage Results" MODIFIED="1732396199502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseRegistrationRecordManagementServiceTest.ic" NAME="CourseRegistrationRecordManagementServiceTest Coverage Results" MODIFIED="1732518364714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$TeacherTest.ic" NAME="TeacherTest Coverage Results" MODIFIED="1732108677826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$GradeTest.ic" NAME="GradeTest Coverage Results" MODIFIED="1731772341716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentManagementServiceTest_and_1_more.ic" NAME="StudentManagementServiceTest and 1 more Coverage Results" MODIFIED="1732424133919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$StudentRegisterServiceTest.ic" NAME="StudentRegisterServiceTest Coverage Results" MODIFIED="1732391696073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerTest.ic" NAME="ManagerTest Coverage Results" MODIFIED="1731234632766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$entity_in_ExamSystem.ic" NAME="entity in ExamSystem Coverage Results" MODIFIED="1732110511017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseRegRecordTest.ic" NAME="CourseRegRecordTest Coverage Results" MODIFIED="1732108609349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerTeacherManagementControllerTest.ic" NAME="ManagerTeacherManagementControllerTest Coverage Results" MODIFIED="1731592067755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$ManagerTest_testAuthenticate_Fail_Username.ic" NAME="ManagerTest.testAuthenticate_Fail_Username Coverage Results" MODIFIED="1731234597776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$GradeTest_testGetStudentName.ic" NAME="GradeTest.testGetStudentName Coverage Results" MODIFIED="1731766797493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseManagementServiceTest.ic" NAME="CourseManagementServiceTest Coverage Results" MODIFIED="1732514619891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$CourseManagementServiceTest_and_1_more.ic" NAME="CourseManagementServiceTest and 1 more Coverage Results" MODIFIED="1732424113669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$TeacherManagementServiceTest_testDeleteTeacherFalse.ic" NAME="TeacherManagementServiceTest.testDeleteTeacherFalse Coverage Results" MODIFIED="1732266104144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ExamSystemSkeleton$comp3111_examsystem_service_in_ExamSystem.ic" NAME="comp3111.examsystem.service in ExamSystem Coverage Results" MODIFIED="1732282956915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>comp3111.examsystem.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>

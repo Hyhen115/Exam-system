@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]2" date="1732384434926" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/comp3111/examsystem/controller/StudentGradeStatisticsController.class" />
+    <option name="AFTER_PATH" value="target/classes/comp3111/examsystem/controller/StudentGradeStatisticsController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/StudentGradeStatisticsController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/comp3111/examsystem/controller/StudentGradeStatisticsController$gradeStatistics.class" />
+    <option name="AFTER_PATH" value="target/classes/comp3111/examsystem/controller/StudentGradeStatisticsController$gradeStatistics.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/StudentGradeStatisticsController$gradeStatistics.class" />
+  </binary>
+</changelist>

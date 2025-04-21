@@ -1,0 +1,6 @@
+examName:Final Exam,courseKey:1730804322905,examTime:180,publish:no,id:1730804311732,
+examName:Midterm Exam,courseKey:1730804322902,examTime:120,publish:no,id:1730804311733,
+examName:Final Exam,courseKey:1730804322902,examTime:180,publish:yes,id:1730804311734,
+examName:Midterm Exam,courseKey:1730804322904,examTime:120,publish:yes,id:1730804311735,
+examName:Final Exam,courseKey:1730804322904,examTime:180,publish:yes,id:1730804311736,
+examName:Final Exam,courseKey:1730804322906,examTime:180,publish:yes,id:1731765808737,

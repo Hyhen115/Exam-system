@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" prefHeight="600" prefWidth="600" style="-fx-background-repeat: stretch;-fx-background-position: center center;" fx:controller="comp3111.examsystem.controller.StudentExamController">
+    <columnConstraints>
+        <ColumnConstraints fillWidth="true" hgrow="ALWAYS"> </ColumnConstraints>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="25"> </RowConstraints>
+        <RowConstraints percentHeight="75"> </RowConstraints>
+    </rowConstraints>
+
+    <GridPane GridPane.rowIndex="0">
+        <columnConstraints>
+            <ColumnConstraints fillWidth="true" hgrow="ALWAYS"> </ColumnConstraints>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="35" prefHeight="55"> </RowConstraints>
+            <RowConstraints minHeight="20" prefHeight="30"> </RowConstraints>
+            <RowConstraints minHeight="20" prefHeight="30"> </RowConstraints>
+        </rowConstraints>
+
+        <StackPane GridPane.rowIndex="0" GridPane.columnIndex="0" >
+            <Label fx:id="examName"  style="-fx-font-size: 30px;"/>
+        </StackPane>
+
+        <StackPane GridPane.rowIndex="01" GridPane.columnIndex="0" style="" >
+            <Label fx:id="numberOfQuestionsLabel" style="-fx-font-size: 15px;"/>
+        </StackPane>
+
+        <StackPane GridPane.rowIndex="2" GridPane.columnIndex="0" style="" >
+            <Label fx:id="timeLimitLabel" text="Time Remaining: 00:00:00" style="-fx-font-size: 15px;"/>
+        </StackPane>
+    </GridPane>
+
+    <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20"> </ColumnConstraints>
+            <ColumnConstraints percentWidth="80"> </ColumnConstraints>
+        </columnConstraints>
+        <padding>
+            <Insets left="10"></Insets>
+        </padding>
+        <ListView fx:id="questionsList" GridPane.columnIndex="0"> </ListView>
+        <GridPane GridPane.columnIndex="1">
+            <padding>
+                <Insets left="10" right="10"/>
+            </padding>
+            <columnConstraints>
+                <ColumnConstraints fillWidth="true" hgrow="ALWAYS"> </ColumnConstraints>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="20">  </RowConstraints>
+                <RowConstraints maxHeight="150">  </RowConstraints>
+                <RowConstraints minHeight="200">  </RowConstraints>
+            </rowConstraints>
+
+            <Label fx:id="questionNumberLabel" style="-fx-font-size: 15px;" GridPane.rowIndex="0"/>
+            <TextArea fx:id="QuestionDetailsTextArea" GridPane.rowIndex="1" editable="false" wrapText="true"/>
+            <VBox GridPane.rowIndex="2" spacing="15" style="-fx-font-size:12px;">
+
+                <VBox fx:id="optionsBox" spacing="20">
+                    <padding>
+                        <Insets top="20" left="20" right="20"/>
+                    </padding>
+
+                </VBox>
+
+                <StackPane>
+                    <HBox alignment="CENTER" spacing="10">
+                        <Button text="Next" onAction="#nextQuestion"/>
+                        <Button text="Submit" onAction="#handleSubmit"/>
+                    </HBox>
+                </StackPane>
+            </VBox>
+        </GridPane>
+    </GridPane>
+
+
+</GridPane>

@@ -1,0 +1,6 @@
+courseId:COMP202,courseName:Data Structures,department:Computer Science,id:1730804322906,
+courseId:PHYS101,courseName:Physics I,department:Physics,id:1730804322905,
+courseId:CHEM101,courseName:General Chemistry,department:Chemistry,id:1730804322904,
+courseId:ENG202,courseName:Technical Writing,department:English,id:1730804322903,
+courseId:STAT101,courseName:Statistics,department:Mathematics,id:1730804322902,
+courseId:BIO101,courseName:Introduction to Biology,department:Biology,id:1730804322901,

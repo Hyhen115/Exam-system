@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="comp3111.examsystem.controller.StudentGradeStatisticsController"
+          prefHeight="600.0" prefWidth="600.0">
+
+    <columnConstraints>
+        <ColumnConstraints fillWidth="true" hgrow="ALWAYS"> </ColumnConstraints>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="20"/>
+        <RowConstraints percentHeight="80"/>
+    </rowConstraints>
+
+    <StackPane GridPane.rowIndex="0">
+        <HBox alignment="CENTER" prefHeight="329.0" prefWidth="600.0">
+            <children>
+                <Label text="Exams" style="-fx-font-size: 15px">
+                    <padding>
+                        <Insets right="20.0" />
+                    </padding>
+                </Label>
+                <ComboBox fx:id="statisticsCombox" prefHeight="23.0" prefWidth="200.0" />
+                <Button mnemonicParsing="false" text="Reset" onAction="#reset">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" text="Filter" onAction="#filter">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </StackPane>
+
+    <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" fillWidth="true"/>
+            <ColumnConstraints percentWidth="50" fillWidth="true"/>
+        </columnConstraints>
+
+        <TableView fx:id="studentGradeTable" GridPane.columnIndex="0">
+            <columns>
+                <TableColumn fx:id="courseColumn" text="Course" />
+                <TableColumn fx:id="examColumn" text="Exam" />
+                <TableColumn fx:id="scoreColumn" text="Score" />
+                <TableColumn fx:id="fullScoreColumn" text="Full Score" />
+                <TableColumn fx:id="timeSpendColumn" text="Time Spend" />
+            </columns>
+        </TableView>
+
+        <VBox GridPane.columnIndex="1">
+            <BarChart fx:id="barChart">
+                <xAxis>
+                    <CategoryAxis fx:id="categoryAxisBar" side="BOTTOM" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="numberAxisBar" side="LEFT" />
+                </yAxis>
+            </BarChart>
+            <StackPane>
+                <Button mnemonicParsing="false" text="Refresh" onAction="#refresh">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </StackPane>
+        </VBox>
+
+    </GridPane>
+
+</GridPane>

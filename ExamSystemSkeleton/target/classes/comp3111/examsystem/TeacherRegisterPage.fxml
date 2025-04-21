@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.TeacherRegisterController">
+    <children>
+        <Label text="Register New Teacher" style="-fx-font-size: 20px;"/>
+
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT"/>
+                <ColumnConstraints halignment="LEFT"/>
+            </columnConstraints>
+
+            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="usernameTxt" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="nameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Gender:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <ChoiceBox fx:id="genderComboX" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Age:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="ageTxt" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Label text="Position:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <ChoiceBox fx:id="positionComboX" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <Label text="Department:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <TextField fx:id="departmentTxt" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <PasswordField fx:id="passwordTxt" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+            <Label text="Password Confirm:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+            <PasswordField fx:id="passwordConfirmTxt" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+        </GridPane>
+
+        <!-- HBox for Close and Submit buttons -->
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Close" onAction="#close"/>
+            <Button text="Submit" onAction="#submit"/>
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>
+

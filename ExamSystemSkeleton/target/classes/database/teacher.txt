@@ -1,0 +1,5 @@
+username:teacher1,name:Dr. Smith,gender:Female,age:48,position:Professor,department:EE,password:teach123,id:1730889772341,
+username:teacher2,name:Mr. Green,gender:Male,age:52,position:Teaching Assistant,department:CSE,password:teach123,id:1730890087054,
+username:teacher3,name:Dr. White,gender:Male,age:57,position:Professor,department:CSE,password:teach123,id:1730890874957,
+username:teacher4,name:Ms. Black,gender:Female,age:42,position:Teaching Assistant,department:EE,password:teach123,id:1730891499625,
+username:teacher5,name:Ms. Red,gender:Female,age:42,position:Teaching Assistant,department:CSE,password:teach123,id:1732450027660,
