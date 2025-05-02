@@ -3,6 +3,9 @@
 <p>This is repository for COMP3111 Project</br>
   Team id: Group26</p>
 
+<img width="632" alt="Screenshot 2025-05-02 at 11 33 07 AM" src="https://github.com/user-attachments/assets/69bce254-6b25-4227-8125-41836ac70b45" />
+
+
 <h2>How to Open Application</h2>
 <p>after you have cloned to local machine, PLease open Project ON ExamSystemSkeleton.</p>
 <img width="890" alt="junittestreportpic" src="https://github.com/user-attachments/assets/0ee5630d-00cc-4966-a1ed-4b10cd7a6f19">
